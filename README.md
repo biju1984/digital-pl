@@ -29,7 +29,7 @@ Builds the library for production to the `dist` folder.<br />
 Your library is ready to be shipped!
 
 
-* [Sample  application ](example/)
+* [Sample  application ](Example)
 ```javascript
 import { LoanApply } from "@rakbank/digital-pl";
 
