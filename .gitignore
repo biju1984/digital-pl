@@ -1,0 +1,21 @@
+# Dependencies
+node_modules
+
+# Coverage
+coverage
+
+# Test reports
+reports
+
+# IDE
+.idea
+.vscode
+
+# Misc
+.DS_Store
+
+# Logs
+*.log
+
+
+

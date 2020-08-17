@@ -1,0 +1,57 @@
+{
+  "name": "@rakbank/digital-pl",
+  "version": "0.1.0",
+  "main": "dist/bundle.js",
+  "private": false,
+  "peerDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "^3.4.0",
+    "styled-components": "^5.0.1"
+  },
+  "scripts": {
+    "publish:npm": "rm -rf dist && mkdir dist && babel ./src -d dist --copy-files",
+    "build": "rm -rf dist && rollup -c && cp package.json dist/"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-flow-strip-types": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-stage-3": "^7.8.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "node-sass": "^4.13.1",
+    "postcss-modules": "^1.5.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "^3.4.0",
+    "rollup": "^2.1.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.5.0",
+    "rollup-plugin-svg": "^2.0.0",
+    "rollup-plugin-terser": "^5.3.0"
+  },
+  "dependencies": {
+    "styled-components": "^5.0.1"
+  }
+}
