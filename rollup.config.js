@@ -1,9 +1,9 @@
 // rollup.config.js
-import resolve from "rollup-plugin-node-resolve";
-import babel from "rollup-plugin-babel";
+import resolve from "@rollup/plugin-node-resolve";
+import babel from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
 // Convert CJS modules to ES6, so they can be included in a bundle
-import commonjs from "rollup-plugin-commonjs";
+import commonjs from "@rollup/plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
 import postcssModules from "postcss-modules";
 import svg from "rollup-plugin-svg";
@@ -20,7 +20,6 @@ export default {
     "react-proptypes",
     "crypto",
     "stream",
-    "react-virtualized"
   ],
   plugins: [
     resolve({

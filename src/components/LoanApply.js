@@ -1,17 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-
-const Body = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-`;
 
 function LoanApply() {
   return (
-      <Body>
+      <div>
         <p>Loan web component</p>
-      </Body>
+      </div>
   );
 }
 
